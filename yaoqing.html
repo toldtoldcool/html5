@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is a invietion.</title>
+<meta charset="UTF-8">
+<style>
+body{
+	background:url(1.jpg) center center;
+	background-size:cover;
+
+}
+html,body{
+	height:100%;
+	color:white;
+	padding:0;
+	margin:0;
+	position:relative;
+	font-family: sans-serif;
+}
+#contenta{
+	width:100%;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+h1{
+	font-size: 54px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+p{
+	font-size: 21px;
+	margin: 0 25px 40px 25px;
+
+}
+
+a{
+	font-size:18px;
+	color:white;
+	border:1px solid white;
+	border-radius: 3px;
+	padding:10px 100px;
+	text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+<div id="contenta">
+<h1>Let's leatn html5.</h1>
+<p>发挥您的美感和想象力，探索Web开发的无限可能性，现诚邀您一同踏上HTML5的学习之路。</p>
+<a href="invite.php" id="enroll">邀您参加</a>
+</div>
+<script type="text/javascript">
+	var enroll = document.getElementById('enroll')
+	enroll;;.onclick = function(e){
+		e.preventDefaylt();
+		enroll.innerHTML = "报名成功";
+		enroll.style.background = "#e27cb8b";
+		enroll.style.borderColor = "#e27cb8b";
+
+	}
+</script>
+</body>
+</html>
+
